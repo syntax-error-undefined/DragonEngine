@@ -11,4 +11,4 @@ function onRun(){
      throwNotice("Check out our GitHub at: https://github.com/syntax-error-undefined/DragonEngine");
      throwEvent("Loaded!");
 }
-
+onRun();
