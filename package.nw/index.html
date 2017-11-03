@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<head>
+ <title>Dragon Dungeon</title>
+<meta name="author" content="Noah Enger">
+<meta name="owner" content="Who owns this page?">
+<meta name="owner" content="Noah Enger">
+<meta name="copyright" content="Copyright© 2016 - 2017 DragonGames">
+<meta name="description" content="Game:">
+<meta name="description" content="DD">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <style>
+       body{
+        background-image:url("assets/images/grass.png");    
+		cursor:url("assets/images/cur1.ani"),auto;
+       }
+       #div_stats_hunger {
+		color: white;
+	   }
+		   #div_stats {
+		   color: white;
+		   }
+		   #div_stats_thirst {
+		   color: white;
+		   }
+
+	   #div_body {
+	   
+	   }
+       </style>
+    </head>
+    <body>
+	<div>
+        <!-- Jquery !-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- NodeJS Addons !-->
+        <script src="node_modules/node-core-audio-master/node-core-audio.js"></script>
+				<script src="node_modules/file-system/file-system.js"></script>
+				<script src="node_modules/audio-master/index.js"></script>
+        <!-- DragonDungeon Assets !-->
+        <script src="assets/console.js"></script>
+        <script src="assets/rot.min.js"></script>
+        <script src="assets/sprintf.min.js"></script>
+        <script src="assets/game.js"></script>
+        <script src="assets/utilities.js"></script>
+        <script src="assets/geometry.js"></script>
+        <script src="assets/mod.js"></script>
+		    <script src="assets/player.js"></script>
+        <script src="assets/screens.js"></script>
+        <script src="assets/glyph.js"></script>
+        <script src="assets/dynamicglyph.js"></script>
+        <script src="assets/tile.js"></script>
+        <script src="assets/builder.js"></script>
+        <script src="assets/map.js"></script>
+        <script src="assets/entity.js"></script>
+        <script src="assets/entitymixins.js"></script>
+        <script src="assets/item.js"></script>
+        <script src="assets/itemmixins.js"></script>
+        <script src="assets/repository.js"></script>
+        <script src="assets/entities.js"></script>
+        <script src="assets/items.js"></script>
+        <script src="assets/maps/cave.js"></script>
+        <script src="assets/maps/bosscavern.js"></script>
+				<script src="assets/window.js"></script>
+				<script src="assets/html.js"></script>
+				<script src="assets/config.js"></script>
+        <script src="assets/sound/sound.js"></script>
+       </div>
+	    <div id="div_stats_body">
+			<div id="div_stats_inventory_button"></div>
+			<div id="div_stats"></div>
+			<div id="div_stats_hunger"></div>
+			<div id="div_stats_thirst"></div>
+			<div id="div_stats_hp"></div>
+			<div id="div_stats_xp"></div>
+			<div id="div_stats_messages"></div>
+			<div id="div_stats_level"></div>
+	   </div>
+    </body>
+</html>
