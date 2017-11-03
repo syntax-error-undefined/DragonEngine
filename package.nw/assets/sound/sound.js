@@ -3,6 +3,7 @@ Game.Sound.getAll = [];
 Game.Sound.SoundElement = function(src) {
 	this.sound = document.createElement("audio");
 	this.sound.src = src;
+	Game.Sound.getAll.push(this.sound);
 	this.Loop = function(bool){
 		this.sound.loop = bool;
 	}
@@ -40,7 +41,6 @@ Game.Sound.SoundElement = function(src) {
 	this.getCurrentTime = function(){
 		return this.sound.currentTime;
 	}
-  
 };
 Game.Sound.addSound = function(src){
   return new Game.Sound.SoundElement(src);  
@@ -53,31 +53,12 @@ Game.Sound.MuteGame = function(bool){
   if (bool == true){
       //Mute Game Sounds here
       for (var i = 0; i < Game.Sound.getAll.length; i++ ){
-          
+          Game.Sound.getAll[i].mute();
       }
   } else {
-      
+      //Unmute Game Sounds here
+      for (var i = 0; i < Game.Sound.getAll.length; i++ ){
+          Game.Sound.getAll[i].unmute();
+      }
   }
 };
-	function gameIsMuted(bool){
-		var bool;
-		isMuted = bool;
-		if(bool){
-			myMusic.mute();
-			myMenuMusic.mute();
-			myDeathmusic.mute();
-			soundpop.mute();
-			soundclick.mute();
-			buttonclick.mute();
-		}else if(bool !==true){
-			myMusic.unmute();
-			myMenuMusic.unmute();
-			myDeathmusic.unmute();
-			soundpop.unmute();
-			soundclick.unmute();
-			buttonclick.unmute();
-		}
-    }
-    function MuteGame(bool){
-		gameIsMuted(bool);
-	}
