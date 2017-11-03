@@ -4,7 +4,9 @@ Game.Sound.SoundElement = function(src) {
 	this.sound = document.createElement("audio");
 	this.sound.src = src;
 	Game.Sound.getAll.push(this.sound);
+	this.isLooped = null;
 	this.Loop = function(bool){
+		this.isLooped = bool;
 		this.sound.loop = bool;
 	}
 	this.isEnded = function(){
